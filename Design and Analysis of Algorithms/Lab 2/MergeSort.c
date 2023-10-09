@@ -18,17 +18,14 @@ void Merge(int Arr[], int l, int mid, int h)
     int i, j, k;
     int m = mid - l + 1;
     int n =  h - mid;
-
-    // create temp arrays
+ 
     int A[m], B[n];
-
-    // Copy data to temp arrays A[] and B[]
+ 
     for (i = 0; i < m; i++)
         A[i] = Arr[l + i];
     for (j = 0; j < n; j++)
         B[j] = Arr[mid + 1 + j];
-
-    // Merge the temp arrays back into arr[l..h]
+ 
     i = 0; // Initial index of first sub-array
     j = 0; // Initial index of second sub-array
     k = l; // Initial index of merged sub-array
